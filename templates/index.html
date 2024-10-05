@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Flask App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <!-- Menu Navigasi -->
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+
+    </nav>
+
+    <div class="container">
+        <!-- Bagian Landing Page -->
+        <class="landing-page">
+            <h1>Selamat Datang di Perusahaan Makanan Kami</h1>
+            <p>Kami menawarkan berbagai produk makanan berkualitas tinggi dan sehat.</p>
+
+            <!-- Gambar Produk Makanan -->
+            <img src="{{ url_for('static', filename='img/food1.jpg') }}" alt="Produk Makanan" style="width:100%; height:auto; border-radius: 5px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <img src="{{ url_for('static', filename='img/food2.jpg') }}" alt="Produk Makanan" style="width:100%; height:auto; border-radius: 5px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <img src="{{ url_for('static', filename='img/food3.jpg') }}" alt="Produk Makanan" style="width:100%; height:auto; border-radius: 5px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <img src="{{ url_for('static', filename='img/food4.jpg') }}" alt="Produk Makanan" style="width:100%; height:auto; border-radius: 5px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <img src="{{ url_for('static', filename='img/food5.jpg') }}" alt="Produk Makanan" style="width:100%; height:auto; border-radius: 5px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <img src="{{ url_for('static', filename='img/food6.jpg') }}" alt="Produk Makanan" style="width:100%; height:auto; border-radius: 5px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <img src="{{ url_for('static', filename='img/food7.jpg') }}" alt="Produk Makanan" style="width:100%; height:auto; border-radius: 5px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <img src="{{ url_for('static', filename='img/food8.jpg') }}" alt="Produk Makanan" style="width:100%; height:auto; border-radius: 5px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        </div>
+        </div>
+    </div>
+    <footer style="text-align: center; padding: 20px; color: white; position: fixed; bottom: 0; width: 100%;">
+        <p>&copy; 2024 Fun Foods by QAKU.id. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
